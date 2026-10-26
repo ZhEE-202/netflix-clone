@@ -24,7 +24,7 @@ picture{
 
 header{
     height: 100vh;
-    background-image: url(./images/Rectangle.png);
+    background-image: url(./images/hero.png);
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: overlay;
      border-bottom: 2px solid grey;
@@ -159,7 +159,7 @@ nav{
 }
 
 .layered-image{
-    background-image: url(./images/Netflix\ India\ –\ Watch\ TV\ Shows\ Online\,\ Watch\ Movies\ Online\ 1.svg);
+    background-image: url(./images/netflix.svg);
     background-repeat: no-repeat;
     background-clip: content-box;
     /* position: relative;
