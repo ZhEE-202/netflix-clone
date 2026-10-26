@@ -1,0 +1,285 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #E50914;
+    --secondary-color: #000;
+    --primary-font: 1.2rem;
+    --secondary-font: 2.2rem;
+}
+
+
+
+img,
+picture{
+    max-width: 100%;
+    display: block;
+}
+
+header{
+    height: 100vh;
+    background-image: url(./images/Rectangle.png);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+     border-bottom: 2px solid grey;
+}
+
+
+
+nav{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btns{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links button,
+.btns button:nth-of-type(1){
+    padding: 0.7rem;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    border-radius: 2px;
+}
+
+.btns button:nth-of-type(2){
+    background-color: var(--primary-color);
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.hero-section{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.hero-section div{
+    max-width: 500px;
+    text-align: center;
+}
+
+.hero-section h1{
+    font-size: 3rem;
+
+}
+
+.hero-section h3{
+    margin: 1rem 0;
+}
+
+.hero-section p{
+    margin-bottom: 1rem;
+}
+
+.hero-form{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.FAQ-section section input,
+.hero-form input{
+    padding: 1rem 0.4rem 1rem 0.2rem;
+    width: 70%;
+    border: none;
+    outline: none;
+}
+
+.FAQ-section section button,
+.hero-form button{
+    padding: 1rem 0.4rem;
+    width: 30%;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.frameOne{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-color: #000;
+    color: #fff;
+    border-bottom: 2px solid grey;
+}
+
+.frameOne__text{
+    width: 30%;
+}
+
+.frameOne__text h1{
+    font-size: var(--secondary-font);
+    width: 90%;
+}
+
+.frameOne__text p{
+    width: 80%;
+    font-size: var(--primary-font);
+    text-align: justify;
+    margin-top: 0.7rem;
+}
+
+.frameOne__image img{
+    height: 50vh;
+}
+
+.frameTwo{
+ gap: 4rem;
+}
+
+.frameTwo__text p{
+    text-align: left;
+    width: 85%;
+}
+
+.layered-image{
+    background-image: url(./images/Netflix\ India\ –\ Watch\ TV\ Shows\ Online\,\ Watch\ Movies\ Online\ 1.svg);
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    /* position: relative;
+    display: inline-block; 
+    width: 30%; */
+}
+
+/* .layered-image img:nth-of-type(1){
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.layered-image img:nth-of-type(2){
+    position: absolute;
+  top: 9.5%;   
+  left: 18%; 
+  width: 62%;  
+  height: 48.5%; 
+  object-fit: cover;
+
+  This cuts out a 5-point polygon shape, leaving a notch for the tablet
+  clip-path: polygon(0% 0%, 100% 0%, 100% 53%, 86% 53%, 86% 100%, 0% 100%);
+} */
+
+.FAQ-section{
+    background-color: var(--secondary-color);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    gap: 0.3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid grey;
+}
+
+.FAQ-section h1{
+    padding: 3rem;
+    font-size: var(--secondary-font);
+}
+
+.FAQ-section .questions{
+    background-color: #303030;
+    width: 35%;
+    position: relative;
+}
+
+.questions p{
+    display: none;
+    margin-top: 1rem;
+}
+
+.questions div{
+    padding: 0.8rem 1rem ;
+}
+
+.questions div i{
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    padding-right: 2.5rem;
+}
+
+.FAQ-section section{
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+
+.FAQ-section > p{
+    margin: 2rem 0 1rem 0;
+}
+
+footer{
+    background-color: #000;
+    width: 100%;
+    color: #575757;
+    align-items: center;
+    position: relative;
+    font-size: 0.7rem;
+    padding-left: 25rem;
+    
+}
+
+footer p{
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-container{
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer-content span{
+    cursor: pointer;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.footer-links button{
+    width: 10%;
+    border: 1px solid #575757;
+    color: #575757;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #575757;
+}
